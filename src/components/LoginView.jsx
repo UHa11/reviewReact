@@ -1,16 +1,17 @@
 import React from 'react'
+import { LoginContainer } from './styled/login'
 
 const LoginView = () => {
   return (
-    <form>
+    <LoginContainer>
+        <h2>로그인</h2>
         <ul>
-            <h2>로그인</h2>
-            <li>아이디</li>
-            <li><input type="text" /></li>
-            <li>비밀번호</li>
-            <li><input type="text" /></li>
+          <li>아이디</li>
+          <input type="text" />
+          <li>비밀번호</li>
+          <input type="text" />
         </ul>
-    </form>
+    </LoginContainer>
   )
 }
 
