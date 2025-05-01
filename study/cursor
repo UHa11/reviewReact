@@ -1,0 +1,21 @@
+document.addEventListener("mousemove", (e) => {
+  console.log(e.clientX, e.clientY);
+});
+// 마우스가 움직일 때마다 e라는 MouseEvent 객체가 전달됨
+// 그 안에는 마우스의 현재 좌표(clientX, clientY)가 담겨 있음
+// → 그래서 커서를 움직이거나 마우스 좌표를 추적할 수 있는 것.
+
+document.addEventListener("mousemove", (e) => {
+    console.log({
+      x: e.clientX,
+      y: e.clientY,
+      button: e.buttons,
+      altKey: e.altKey,
+      target: e.target
+    });
+  });
+// 들어오는 정보들:
+// 마우스 좌표
+// 누르고 있는 버튼
+// Alt/Shift 같은 키 누름 여부
+// 이벤트가 발생한 대상 등등
